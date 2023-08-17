@@ -1,0 +1,31 @@
+.bg-dark {
+  background-color: $color-dark;
+}
+
+.flex-center {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+
+// .section {
+//   @include media-breakpoint-up(md) {
+//     margin-bottom: 137px;
+//   }
+
+//   @include media-breakpoint-down(md) {
+//     margin-bottom: 50px;
+//   }
+// }
+
+.container {
+  width: 100%;
+  padding-right: 15px;
+  padding-left: 15px;
+  margin: 0 auto;
+
+  @media (min-width: $xl) {
+    max-width: 1140px;
+  }
+}
