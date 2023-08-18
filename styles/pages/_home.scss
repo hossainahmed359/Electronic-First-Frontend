@@ -1,16 +1,24 @@
 #home {
-    
 
     .bg-hero {
         background-image: url('/public/images/hero.webp');
         background-position: center;
         background-repeat: no-repeat;
         background-size: cover;
+        background-attachment: fixed;
         // height: 650px;
     }
 
     .hero {
-        padding: 250px 0;
+        padding: 50px 0;
+
+        @media (min-width: $md) {
+            padding: 150px 0;
+        }
+
+        @media (min-width: $lg) {
+            padding: 250px 0;
+        }
 
         &__title {
             font-family: $font-family-roboto;
@@ -21,11 +29,11 @@
 
             br {
                 display: none;
-                @media (min-width: $lg) {
+
+                @media (min-width: $md) {
                     display: inline-block;
                 }
             }
-
         }
 
 
@@ -39,7 +47,7 @@
     }
 
     .wave {
-        bottom: -4px;
+        bottom: -5px;
 
         img {
             margin: 0;
@@ -47,9 +55,16 @@
         }
     }
 
-    .products-section {
-        padding: 10px 0;
+    .product-cards {
+        grid-template-columns: repeat(1, 1fr);
 
+        @media (min-width: $sm) {
+            grid-template-columns: repeat(2, 1fr);
+        }
+
+        @media (min-width: $md) {
+            grid-template-columns: repeat(3, 1fr);
+        }
     }
 
 

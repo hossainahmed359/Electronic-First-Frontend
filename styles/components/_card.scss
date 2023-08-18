@@ -1,11 +1,11 @@
 .card {
-    width: 400px;
+    // width: 400px;
 
     &__top {
         margin-bottom: 15px;
         cursor: pointer;
 
-        &-img-container {
+        &__img-container {
             overflow: hidden;
             border-radius: 7px;
 
@@ -21,7 +21,7 @@
             }
         }
 
-        &-discount-tag-cotainer {
+        &__discount-tag-cotainer {
             left: -3px;
             bottom: -3px;
         }
@@ -29,18 +29,36 @@
 
     &__bottom {
 
-        &-title,
-        &-price {
+        &__title,
+        &__price {
             font-family: $font-family-roboto;
             font-weight: 500;
         }
 
-        &-title {
-            font-size: 16px;
-            line-height: 26px;
+        &__dlc-tag {
+            background: $color-dark-fade;
+            padding: 3px 4px;
+            height: max-content;
+            border-radius: 5px;
+            border: 1px solid $color-dark-gray;
+            font-size: 10px;
+            font-weight: 400;
+            opacity: 0.8;
+            height: max-content;
+
+    
+            &:hover {
+                background-color:  $color-dark-hover;
+            }
         }
 
-        &-price {
+        &__title {
+            font-size: 16px;
+            line-height: 26px;
+
+        }
+
+        &__price {
             font-size: 18px;
             line-height: 28px;
         }

@@ -34,7 +34,7 @@ BEM REFERENCES
 
 <body id="home" class="bg-dark">
   <!-- HERO SECTION -->
-  <section class="bg-hero relative w-100">
+  <section id="hero" class="bg-hero relative w-100">
     <!-- NAVIGATION -->
     <div class="">Navigation</div>
     <!-- HERO -->
@@ -63,38 +63,138 @@ BEM REFERENCES
     </div>
   </section>
   <!-- PRODUCTS SECTION -->
-  <section class="section products-section w-100">
+  <section id="trending-products" class="section w-100">
     <div class="container">
-      <!-- SECTION HEADER -->
-      <div class="flex justify-between items-center">
-        <h2 class="section-heading">Trending</h2>
-        <button class="section-right-btn">View All</button>
+      <!-- SECTION HEADER CONTAINER-->
+      <div class="section__header-container flex justify-between items-center">
+        <h2 class="section__header-container__heading">Trending</h2>
+        <button class="section__header-container__right-btn">View All</button>
       </div>
       <!-- SECTION BODY -->
-      <div class="products-list">
-        <div class="card">
-          <div class="card__top relative">
-            <div class="card__top-img-container flex justify-center items-center">
-              <img class="w-100 h-auto"
-                src="https://static.electronicfirst.com/website/uploads/2023/08/05/banner_slider_1691255544_64ce82f80b28c.webp"
-                alt="product-image">
+      <div class="section__body">
+        <div class="product-cards grid gap-5">
+          <div class="card">
+            <div class="card__top relative">
+              <div class="card__top__img-container flex justify-center items-center">
+                <img class="w-100 h-auto"
+                  src="https://static.electronicfirst.com/website/uploads/2023/08/05/banner_slider_1691255544_64ce82f80b28c.webp"
+                  alt="product-image">
+              </div>
+              <div class="card__top__discount-tag-cotainer absolute">
+                <div class="discount-tag relative">
+                  <p class="discount-tag__text relative z-10">-25%</p>
+                  <div class="discount-tag__shape absolute z-0"></div>
+                </div>
+              </div>
             </div>
-            <div class="card__top-discount-tag-cotainer absolute">
-              <div class="discount-tag relative">
-                <p class="discount-tag__text relative z-10">-25%</p>
-                <div class="discount-tag__shape absolute z-0"></div>
+            <div class="card__bottom flex justify-between items-center">
+              <div class="flex items-center justify-start gap-1">
+                <p class="card__bottom__dlc-tag">DLC</p>
+                <p class="card__bottom__title "> Sengoku Dynasty</p>
+              </div>
+              <div>
+                <p class="card__bottom__price">19.99€</p>
               </div>
             </div>
           </div>
-          <div class="card__bottom flex justify-between items-center">
-            <div>
-              <p class="card__bottom-title">Sengoku Dynasty</p>
+          <div class="card">
+            <div class="card__top relative">
+              <div class="card__top__img-container flex justify-center items-center">
+                <img class="w-100 h-auto"
+                  src="https://static.electronicfirst.com/website/uploads/2023/08/05/banner_slider_1691255544_64ce82f80b28c.webp"
+                  alt="product-image">
+              </div>
+              <div class="card__top__discount-tag-cotainer absolute">
+                <div class="discount-tag relative">
+                  <p class="discount-tag__text relative z-10">-25%</p>
+                  <div class="discount-tag__shape absolute z-0"></div>
+                </div>
+              </div>
             </div>
-            <div>
-              <p class="card__bottom-price">19.99€</p>
+            <div class="card__bottom flex justify-between items-center">
+              <div class="flex items-center justify-start gap-1">
+                <p class="card__bottom__dlc-tag">DLC</p>
+                <p class="card__bottom__title "> Sengoku Dynasty</p>
+              </div>
+              <div>
+                <p class="card__bottom__price">19.99€</p>
+              </div>
+            </div>
+          </div>
+          <div class="card">
+            <div class="card__top relative">
+              <div class="card__top__img-container flex justify-center items-center">
+                <img class="w-100 h-auto"
+                  src="https://static.electronicfirst.com/website/uploads/2023/08/05/banner_slider_1691255544_64ce82f80b28c.webp"
+                  alt="product-image">
+              </div>
+              <div class="card__top__discount-tag-cotainer absolute">
+                <div class="discount-tag relative">
+                  <p class="discount-tag__text relative z-10">-25%</p>
+                  <div class="discount-tag__shape absolute z-0"></div>
+                </div>
+              </div>
+            </div>
+            <div class="card__bottom flex justify-between items-center">
+              <div class="flex items-center justify-start gap-1">
+                <p class="card__bottom__dlc-tag">DLC</p>
+                <p class="card__bottom__title "> Sengoku Dynasty</p>
+              </div>
+              <div>
+                <p class="card__bottom__price">19.99€</p>
+              </div>
+            </div>
+          </div>
+          <div class="card">
+            <div class="card__top relative">
+              <div class="card__top__img-container flex justify-center items-center">
+                <img class="w-100 h-auto"
+                  src="https://static.electronicfirst.com/website/uploads/2023/08/05/banner_slider_1691255544_64ce82f80b28c.webp"
+                  alt="product-image">
+              </div>
+              <div class="card__top__discount-tag-cotainer absolute">
+                <div class="discount-tag relative">
+                  <p class="discount-tag__text relative z-10">-25%</p>
+                  <div class="discount-tag__shape absolute z-0"></div>
+                </div>
+              </div>
+            </div>
+            <div class="card__bottom flex justify-between items-center">
+              <div class="flex items-center justify-start gap-1">
+                <p class="card__bottom__dlc-tag">DLC</p>
+                <p class="card__bottom__title "> Sengoku Dynasty</p>
+              </div>
+              <div>
+                <p class="card__bottom__price">19.99€</p>
+              </div>
+            </div>
+          </div>
+          <div class="card">
+            <div class="card__top relative">
+              <div class="card__top__img-container flex justify-center items-center">
+                <img class="w-100 h-auto"
+                  src="https://static.electronicfirst.com/website/uploads/2023/08/05/banner_slider_1691255544_64ce82f80b28c.webp"
+                  alt="product-image">
+              </div>
+              <div class="card__top__discount-tag-cotainer absolute">
+                <div class="discount-tag relative">
+                  <p class="discount-tag__text relative z-10">-25%</p>
+                  <div class="discount-tag__shape absolute z-0"></div>
+                </div>
+              </div>
+            </div>
+            <div class="card__bottom flex justify-between items-center">
+              <div class="flex items-center justify-start gap-1">
+                <p class="card__bottom__dlc-tag">DLC</p>
+                <p class="card__bottom__title "> Sengoku Dynasty</p>
+              </div>
+              <div>
+                <p class="card__bottom__price">19.99€</p>
+              </div>
             </div>
           </div>
         </div>
+
       </div>
     </div>
   </section>

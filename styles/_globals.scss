@@ -60,13 +60,17 @@ button {
   background-color: $color-ultra-dark;
 }
 
-/* ===== DISPLAY FLEX  ===== */
+/* ===== DISPLAY ===== */
 .d-none {
   display: none;
 }
 
 .d-block {
   display: block;
+}
+
+.grid {
+  display: grid;
 }
 
 .flex {

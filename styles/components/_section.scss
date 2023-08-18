@@ -1,0 +1,40 @@
+.section {
+
+    padding: 10px 0;
+
+    &__header-container {
+
+        &__heading,
+        &__right-btn {
+            font-family: $font-family-roboto;
+        }
+
+        &__heading {
+            font-size: 25px;
+            line-height: 40px;
+            font-weight: 500;
+            padding: 20px 0;
+        }
+
+        &__right-btn {
+            cursor: pointer;
+            background: $color-dark-fade;
+            padding: 5px 10px;
+            height: max-content;
+            padding: 10px 15px;
+            border-radius: 5px;
+            border: 1px solid $color-dark-gray;
+            font-size: 13px;
+            font-weight: 600;
+
+            &:hover {
+                background-color: $color-dark-hover;
+            }
+        }
+    }
+
+    &__body {
+        // css here
+    }
+
+}
