@@ -33,11 +33,97 @@ BEM REFERENCES
  -->
 
 <body id="home" class="bg-dark">
-  <!-- HERO SECTION -->
+  <!-- =========== HERO SECTION =========== -->
   <section id="hero" class="bg-hero relative w-100">
-    <!-- NAVIGATION -->
-    <div class="">Navigation</div>
-    <!-- HERO -->
+    <!-- =========== NAVIGATION =========== -->
+    <div class="nav w-100 absolute">
+      <div class="container-fluid">
+        <div class="nav__contents flex items-start justify-between">
+           <!-- =========== COMPANY LOGO =========== -->
+          <div class="nav__contents__logo flex items-center justify-center">
+            <img src="/public/images/ef-nav-icon.webp" class="w-100 h-auto" alt="Electronic First">
+          </div>
+          <!-- =========== MENUS =========== -->
+          <div class="nav__contents__menus flex flex-col items-center justify-center gap-5">
+            <!-- =========== TOP MENUS =========== -->
+            <div class="nav__contents__menus__top">
+              <ul class="flex justify-center items-center gap-5">
+                <li>
+                  <a class="nav__contents__menus__top__link" href="#">Trending</a>
+                </li>
+                <li>
+                  <a class="nav__contents__menus__top__link" href="#">Pre-orders</a>
+                </li>
+                <li>
+                  <a class="nav__contents__menus__top__link" href="#">Upcoming</a>
+                </li>
+                <li>
+                  <a class="nav__contents__menus__top__link" href="#">Support 24/7</a>
+                </li>
+              </ul>
+            </div>
+            <!-- =========== BOTTOM MENUS =========== -->
+            <div id="nav-bottom-menu" class="nav__contents__menus__bottom relative"> <!--ADD Class: search-active -->
+                <ul class="nav__contents__menus__bottom__dropdown-list flex justify-center items-center gap-5 absolute z-0">
+                  <li>
+                    <button class="nav__contents__menus__bottom__dropdown-list__item flex justify-center items-center gap-2">
+                      <div class="flex justify-center items-center">
+                        <img src="/public//images/icons/display.svg" alt="pc">
+                      </div>
+                      <span>PC</span>
+                    </button>
+                  </li>
+                  <li>
+                    <button class="nav__contents__menus__bottom__dropdown-list__item flex justify-center items-center gap-2">
+                      <div class="flex justify-center items-center">
+                        <img src="/public//images/icons/playstation.svg" alt="playstation">
+                      </div>
+                      <span>Playstation</span>
+                    </button>
+                  </li>
+                  <li>
+                    <button class="nav__contents__menus__bottom__dropdown-list__item flex justify-center items-center gap-2">
+                      <div class="flex justify-center items-center">
+                        <img src="/public//images/icons/xbox.svg" alt="xbox">
+                      </div>
+                      <span>Xbox</span>
+                    </button>
+                  </li>
+                  <li>
+                    <button class="nav__contents__menus__bottom__dropdown-list__item flex justify-center items-center gap-2">
+                      <div class="flex justify-center items-center">
+                        <img src="/public//images/icons/nintendo-switch.svg" alt="nintendo-switch">
+                      </div>
+                      <span>Nintendo</span>
+                    </button>
+                  </li>
+                </ul>
+                <div class="nav__contents__menus__bottom__search-bar relative z-10">
+                  <input id="search-input" class="" type="text" placeholder="Search your games">
+                  <button id="search-btn" class="flex justify-center items-center absolute ">
+                    <img id="search-icon" class="nav__contents__menus__bottom__search-bar__search-icon" src="/public/images/icons/search.svg" alt="search">
+                    <img id="search-cancel-icon" class="nav__contents__menus__bottom__search-bar__cancel-icon" src="/public/images/icons/cancel.svg" alt="search">
+                  </button>
+                </div>
+              <div>
+
+              </div>
+            </div>
+          </div>
+          <!-- =========== CART & USER =========== -->
+          <div class="nav__contents__cart-and-avatar flex items-center justify-center gap-2">
+            <button class="nav__contents__cart-and-avatar__cart-icon flex items-center justify-center">
+              <img src="/public/images/icons/cart.svg" alt="cart">
+            </button>
+            <button class="nav__contents__cart-and-avatar__profile-icon flex items-center justify-center">
+              <img src="/public/images/icons/person.svg" alt="profile">
+            </button>
+          </div>
+        </div>
+      </div>
+
+    </div>
+    <!-- =========== HERO =========== -->
     <div class="hero">
       <div class="container">
         <div class="flex flex-col justify-center items-start w-100">
@@ -62,15 +148,15 @@ BEM REFERENCES
       <img src="/public/images/wave.svg" alt="">
     </div>
   </section>
-  <!-- PRODUCTS SECTION -->
+  <!-- =========== PRODUCTS SECTION =========== -->
   <section id="trending-products" class="section w-100">
     <div class="container">
-      <!-- SECTION HEADER CONTAINER-->
+      <!-- =========== SECTION HEADER CONTAINER ===========-->
       <div class="section__header-container flex justify-between items-center">
         <h2 class="section__header-container__heading">Trending</h2>
         <button class="section__header-container__right-btn">View All</button>
       </div>
-      <!-- SECTION BODY -->
+      <!-- =========== SECTION BODY =========== -->
       <div class="section__body">
         <div class="product-cards grid gap-5">
           <div class="card">
@@ -198,7 +284,7 @@ BEM REFERENCES
       </div>
     </div>
   </section>
-  <!-- FOOTER -->
+  <!-- =========== FOOTER  ===========-->
   <br>
   <br>
   <br>

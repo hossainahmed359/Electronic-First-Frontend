@@ -10,10 +10,16 @@ a {
   text-decoration: none !important;
 }
 
+input {
+  border: none;
+  outline: none;
+}
+
 button {
   border: none;
   outline:none;
   background: none;
+  cursor: pointer;
 }
 
 * {
@@ -58,6 +64,12 @@ button {
 
 .bg-ultra-dark {
   background-color: $color-ultra-dark;
+}
+
+/* ===== MARGIN || PADDING CSS ===== */
+.mx-auto {
+  margin-left: auto;
+  margin-right: auto;
 }
 
 /* ===== DISPLAY ===== */
@@ -115,6 +127,14 @@ button {
 
 .justify-between {
   justify-content: space-between;
+}
+
+.justify-evenly {
+  justify-content: space-evenly;
+}
+
+.justify-around {
+  justify-content: space-around;
 }
 
 .justify-end {
@@ -244,6 +264,14 @@ button {
   @media (min-width: $xl) {
     max-width: 1140px;
   }
+}
+
+.container-fluid {
+  width: 100%;
+  padding-right: 15px;
+  padding-left: 15px;
+  margin: 0 auto;
+
 }
 
 // .section {}
