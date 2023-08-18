@@ -1,0 +1,48 @@
+.avaiability-tag {
+    background-color: rgb(109, 109, 109, 0.6);
+    // padding: 8px 10px;
+    padding: 5px 10px;
+    border-radius: 5px;
+
+    &:hover {
+        background-color: rgb(109, 109, 109, 0.5);
+    }
+
+    &__text {
+        font-family: $font-family-quantico;
+        font-size: 14px;
+        font-weight: 700;
+    }
+}
+
+
+.discount-tag {
+    background-color: rgb(255, 84, 0);
+    border-radius: 5px;
+    padding: 6px;
+    position: relative;
+
+    &__text {
+        font-family: $font-family-quantico;
+        font-size: 15px;
+        font-weight: 700;
+        position: relative;
+        z-index: 1;
+    }
+
+    &:after {
+        background-color: rgb(255, 84, 0);
+        -webkit-transform: skewX(20deg);
+        transform: skew(20deg);
+        width: 100%;
+        border-radius: 10px 5px;
+        content: "";
+        position: absolute;
+        top: 0;
+        bottom: 0;
+        right: -5px;
+        z-index: 0;
+    }
+
+
+}

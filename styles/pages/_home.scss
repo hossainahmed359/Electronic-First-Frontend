@@ -1,0 +1,50 @@
+#home {
+    overflow: hidden;
+    .hero-bg {
+        background-image: url('/public/images/hero.webp');
+        background-position: center;
+        background-repeat: no-repeat;
+        background-size: cover;
+        height: 650px;
+    }
+
+    .hero {
+        padding: 300px 0;
+
+        &__title {
+            font-family: $font-family-roboto;
+            font-size: 40px;
+            line-height: 50px;
+            font-weight: 500;
+            padding: 20px 0;
+
+            br {
+                display: none;
+                @media (min-width: $lg) {
+                    display: inline-block;
+                }
+            }
+
+        }
+
+
+        &__price {
+            font-family: $font-family-roboto;
+            font-size: 45px;
+            line-height: 45px;
+            font-weight: 400;
+            margin-top: -5px;
+        }
+    }
+
+    .hero-wave {
+        bottom: -4px;
+
+        img {
+            margin: 0;
+            padding: 0;
+        }
+    }
+
+
+}

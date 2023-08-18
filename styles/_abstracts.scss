@@ -1,0 +1,92 @@
+//  =========== VARIABLES ===========
+
+// COLORS
+$color-ultra-dark: #101010;
+$color-dark: #1d1d1d;
+$color-light: #ffffff;
+$color-oranage: #ff5400;
+$color-red: #ff0003;
+$color-red-hover: #d93d3f;
+$color-light-gray: #b7b7b7;
+$color-medium-gray: #909090;
+$color-dark-gray: #6d6d6d;
+
+// FONTS
+$font-family-sans-serif: -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, "Helvetica Neue", Arial, "Noto Sans", "Liberation Sans", sans-serif, "Apple Color Emoji", "Segoe UI Emoji", "Segoe UI Symbol", "Noto Color Emoji";
+$font-family-lato: 'Lato', sans-serif;
+$font-family-roboto: 'Roboto', sans-serif;
+$font-family-quantico: 'Quantico', sans-serif;
+
+// BREAKPOINTS
+$xs: 0;
+$sm: 576px;
+$md: 768px;
+$lg: 992px;
+$xl: 1200px;
+
+// Z-INDEX
+.z-0 {
+    z-index: 0;
+}
+
+.z-10 {
+    z-index: 10;
+}
+
+.z-20 {
+    z-index: 20;
+}
+
+.z-30 {
+    z-index: 30;
+}
+
+.z-40 {
+    z-index: 40;
+}
+
+.z-50 {
+    z-index: 50;
+}
+
+.z-auto {
+    z-index: auto;
+}
+
+
+/* ===== POSITION || WIDTH || HEIGHT ===== */
+.relative {
+    position: relative;
+}
+
+.absolute {
+    position: absolute;
+}
+
+.fixed {
+    position: fixed;
+}
+
+.w-100 {
+    width: 100%;
+}
+
+.w-50 {
+    width: 50%;
+}
+
+.w-screen {
+    width: 100vw;
+}
+
+.h-100 {
+    height: 100%;
+}
+
+.h-50 {
+    height: 50%;
+}
+
+.h-screen {
+    height: 100vh;
+}
