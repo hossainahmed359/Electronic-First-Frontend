@@ -1,15 +1,16 @@
 #home {
-    overflow: hidden;
-    .hero-bg {
+    
+
+    .bg-hero {
         background-image: url('/public/images/hero.webp');
         background-position: center;
         background-repeat: no-repeat;
         background-size: cover;
-        height: 650px;
+        // height: 650px;
     }
 
     .hero {
-        padding: 300px 0;
+        padding: 250px 0;
 
         &__title {
             font-family: $font-family-roboto;
@@ -37,13 +38,18 @@
         }
     }
 
-    .hero-wave {
+    .wave {
         bottom: -4px;
 
         img {
             margin: 0;
             padding: 0;
         }
+    }
+
+    .products-section {
+        padding: 10px 0;
+
     }
 
 

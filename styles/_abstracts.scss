@@ -3,6 +3,8 @@
 // COLORS
 $color-ultra-dark: #101010;
 $color-dark: #1d1d1d;
+$color-dark-fade: #272727;
+$color-dark-hover: #333333;
 $color-light: #ffffff;
 $color-oranage: #ff5400;
 $color-red: #ff0003;
@@ -23,70 +25,3 @@ $sm: 576px;
 $md: 768px;
 $lg: 992px;
 $xl: 1200px;
-
-// Z-INDEX
-.z-0 {
-    z-index: 0;
-}
-
-.z-10 {
-    z-index: 10;
-}
-
-.z-20 {
-    z-index: 20;
-}
-
-.z-30 {
-    z-index: 30;
-}
-
-.z-40 {
-    z-index: 40;
-}
-
-.z-50 {
-    z-index: 50;
-}
-
-.z-auto {
-    z-index: auto;
-}
-
-
-/* ===== POSITION || WIDTH || HEIGHT ===== */
-.relative {
-    position: relative;
-}
-
-.absolute {
-    position: absolute;
-}
-
-.fixed {
-    position: fixed;
-}
-
-.w-100 {
-    width: 100%;
-}
-
-.w-50 {
-    width: 50%;
-}
-
-.w-screen {
-    width: 100vw;
-}
-
-.h-100 {
-    height: 100%;
-}
-
-.h-50 {
-    height: 50%;
-}
-
-.h-screen {
-    height: 100vh;
-}
