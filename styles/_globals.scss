@@ -284,6 +284,10 @@ button {
   @media (min-width: $xl) {
     max-width: 1140px;
   }
+
+  @media (min-width: $xxl) {
+    max-width: 1340px;
+  }
 }
 
 .container-fluid {

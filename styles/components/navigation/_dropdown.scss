@@ -87,7 +87,7 @@
                 
                 // background: linear-gradient(to right bottom, rgba(225, 225, 225,0.8 ), rgba(225, 225, 225,0.5 ));
 
-                background: linear-gradient(to right bottom, rgba(52, 58,  64, 0.9), rgba(52, 58,  64, 0.3));
+                background: linear-gradient(to right bottom, rgba(52, 58,  64, 0.9), rgba(52, 58,  64, 0.5));
 
                 // rgba(52, 58,  64, 0.8)
 
@@ -99,7 +99,7 @@
                 &__group {
 
                     &__header-section {
-                           background-color: rgba(225, 225, 225, 0.3);
+                           background-color: rgba(225, 225, 225,0.1);
                            border-radius: 8px;
                            padding: 10px 20px;
 

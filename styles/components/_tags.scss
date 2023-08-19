@@ -1,11 +1,13 @@
 .avaiability-tag {
-    background-color: rgb(109, 109, 109, 0.6);
+    // background-color: rgba(109, 109, 109, 0.6);
+    background-color: rgba(39, 39, 39, 0.4);
     // padding: 8px 10px;
     padding: 5px 10px;
     border-radius: 5px;
 
     &:hover {
-        background-color: rgb(109, 109, 109, 0.5);
+        // background-color: rgba(109, 109, 109, 0.5);
+        background-color: rgba(39, 39, 39, 0.5);
     }
 
     &__text {
