@@ -135,6 +135,7 @@
             }
 
             &__cart-and-avatar {
+                
                
                margin-top: -5px;
 
@@ -145,6 +146,17 @@
                         width: 20px // height: 15px;
                     }
                 }
+
+                &__search-icon {
+                    display: block;
+
+                    margin-right: -5px;
+                    margin-bottom: -5px;
+                    img {
+                        height: 17px !important;
+                    }
+                }
+    
 
                 &__profile-icon {
                     display: none;

@@ -263,6 +263,8 @@
 
         &__cart-and-avatar {
 
+            gap: 0px;
+
             button {
                 padding: 10px;
 
@@ -272,6 +274,9 @@
                 }
             }
 
+            &__search-icon {
+                display: none;
+            }
 
 
             &__profile-icon {
