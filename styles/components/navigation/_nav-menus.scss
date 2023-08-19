@@ -5,14 +5,14 @@
 }
 
 .gradient-orange {
-    background: rgba(253, 84, 1, 0.8);
-    background: linear-gradient(135deg, rgba(253, 84, 1, 0.8), rgba(255, 84, 0, 1.0));
+    background: rgba(253, 84, 1, 1);
+    background: linear-gradient(135deg, rgba(253, 84, 1, 1), rgba(255, 84, 0, 0.8));
 }
 
 // ANIMATIONS
 @keyframes progressAnimation {
     0% {
-        width: 0;
+        width: 10%;
     }
 
     50% {
@@ -30,11 +30,11 @@
     }
 
     50% {
-        transform: rotate(45deg) scale(1.2);
+        transform: rotate(45deg) scale(1.5);
     }
 
     100% {
-        transform: rotate(90deg) scale(1.5);
+        transform: rotate(90deg) scale(1.7);
     }
 }
 
@@ -56,7 +56,7 @@
 
                 &__link {
                     font-family: $font-family-quantico;
-                    font-size: 15px;
+                    font-size: 18px;
                     font-weight: 500;
                     line-height: 20px;
                     letter-spacing: .02em;
@@ -90,8 +90,8 @@
             &__bottom {
 
                 width: 746px;
-                height: 50px;
-                border-radius: 30px;
+                height: 75px;
+                border-radius: 45px;
 
                 background: rgba(39, 39, 39, 1);
                 background: linear-gradient(135deg, rgba(39, 39, 39, 1), rgba(39, 39, 39, 0.5));
@@ -142,10 +142,11 @@
                         font-family: $font-family-quantico;
                         font-size: 15px;
                         font-weight: 500;
-                        border-radius: 30px;
+                        border-radius: 45px;
                         color: $color-light;
-                        padding: 25px 20px;
+                        padding: 38px 20px;
                         display: none;
+                        overflow: hidden;
 
                         right: 0;
                         top: 0;
@@ -153,16 +154,17 @@
 
                         &::placeholder {
                             color: $color-light;
+                            opacity: 0.95;
                         }
 
                     }
 
                     button {
-                        height: 50px;
+                        height: 75px;
                         bottom: 0;
                         top: 0;
                         right: 0px;
-                        padding: 15px 16px;
+                        padding: 15px 27px;
                         border-radius: 50%;
                         background: rgba(253, 84, 1, 0.8);
                         background: linear-gradient(135deg, rgba(253, 84, 1, 0.8), rgba(255, 84, 0, 1.0));
@@ -195,13 +197,21 @@
                         height: 100%;
                         display: block;
                         background: rgba(253, 84, 1, 0.8);
-                        background: linear-gradient(135deg, rgba(253, 84, 1, 0.8), rgba(255, 84, 0, 1.0));
+                        background: linear-gradient(135deg, rgba(253, 84, 1, 1), rgba(255, 84, 0, 0.8));
                         animation: progressAnimation 0.5s linear;
+                   
+                        &::before {
+                            content: 'Advanced Search';
+                            color: white;
+                            display: block;
+                            position: relative;
+                            z-index: 5;
+                        }
                     }
 
                     button {
                         background-color: none;
-                        right: -40px;
+                        right: -60px;
                         background: none;
                     }
 
@@ -211,7 +221,7 @@
 
                     &__cancel-icon {
                         display: block;
-                        transform: rotate(90deg) scale(1.5);
+                        transform: rotate(90deg) scale(1.7);
                         animation: cancelButtonAnimation 0.5s linear;
 
                     }
@@ -227,13 +237,15 @@
                 padding: 10px;
 
                 img {
-                    width: 20px
+                    // width: 20px
+                    height: 30px;
                 }
             }
 
             &__profile-icon {
                 background-color: rgba(39, 39, 39, 0.5);
-                border-radius: 10px;
+                border-radius: 20px;
+
 
                 &:hover {
                     background-color: rgba(39, 39, 39, 0.9);
