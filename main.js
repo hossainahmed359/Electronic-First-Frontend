@@ -26,6 +26,36 @@ function handleSearchClick () {
     
 }
 
+// MOBILE SEARCH
+
+const mobileSearchBtn = document.getElementById('mobile-search-btn');
+const mobileSearchCancelBtn = document.getElementById('mobile-search-cancel-btn');
+const mobileSearchElement = document.getElementById('mobile-search');
+
+
+console.log(mobileSearchElement)
+
+mobileSearchBtn.addEventListener('click', handleMobileSearchClick) ;
+mobileSearchCancelBtn.addEventListener('click', handleMobileSearchCancelClick) ;
+
+function handleMobileSearchClick () {
+    mobileSearchElement.classList.remove('d-none');
+    mobileSearchElement.classList.add('slide-in-top');
+   
+}
+
+function handleMobileSearchCancelClick () {
+
+    mobileSearchElement.classList.add('slide-out-top');
+    mobileSearchElement.classList.remove('slide-in-top');
+    
+     setTimeout(function() {
+        mobileSearchElement.classList.remove('slide-out-top');
+        mobileSearchElement.classList.add('d-none');
+    },[300]);
+
+    // clearInterval(timeOutId)
+}
 
 // DROPDOWN
 let isDropdownVisible = false;

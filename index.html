@@ -37,7 +37,7 @@ BEM REFERENCES
 	<section id="hero" class="bg-hero relative w-100">
 		<!-- =========== NAVIGATION =========== -->
 		<div class="nav w-100 absolute">
-			<div class="container-fluid">
+			<div class="container-fluid relative">
 				<div class="nav__contents flex items-start justify-between">
 					<!-- =========== COMPANY LOGO =========== -->
 					<div class="nav__contents__logo flex items-center justify-center">
@@ -121,7 +121,6 @@ BEM REFERENCES
 									</button>
 								</div>
 								<div>
-
 								</div>
 							</div>
 
@@ -232,7 +231,7 @@ BEM REFERENCES
 					</div>
 					<!-- =========== CART & USER =========== -->
 					<div class="nav__contents__cart-and-avatar flex items-center justify-center gap-2">
-						<button class="nav__contents__cart-and-avatar__search-icon flex items-center justify-center">
+						<button id="mobile-search-btn" class="nav__contents__cart-and-avatar__search-icon flex items-center justify-center">
 							<img src="/images/icons/search.svg" alt="cart">
 						</button>
 						<button class="nav__contents__cart-and-avatar__cart-icon flex items-center justify-center">
@@ -242,9 +241,18 @@ BEM REFERENCES
 							<img src="/images/icons/person.svg" alt="profile">
 						</button>
 						<!-- =========== BURGER MENU =========== -->
-						<button class="nav__contents__cart-and-avatar__burger-menu burger-menu flex items-center justify-center">
+						<button
+							class="nav__contents__cart-and-avatar__burger-menu burger-menu flex items-center justify-center">
 							<img src="/images/icons/list.svg" class="" alt="burger menu">
 						</button>
+					</div>
+				</div>
+
+				<!-- =========== MOBILE SEARCH =========== -->
+				<div id="mobile-search" class="nav__mobile-search d-flex items-center justify-center absolute z-10 w-100 d-none">
+					<input type="text" placeholder="Minecraft, RPG, multiplayer...">
+					<button id="mobile-search-cancel-btn" class=" d-flex justify-center items-center">
+						<img src="/images/icons/cancel.svg" alt="Cancel Icon">
 					</div>
 				</div>
 			</div>

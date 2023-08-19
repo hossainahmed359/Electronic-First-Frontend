@@ -308,4 +308,33 @@
 
         }
     }
+
+    &__mobile-search {
+        left: 0;
+        right: 0;
+        margin: auto;
+        
+        input[type='text']{
+            margin-left: 15px;
+            width: 85vw;
+            height: 100%;
+            background: rgba(253, 84, 1, 1);
+            background: linear-gradient(135deg, rgba(253, 84, 1, 1), rgba(255, 84, 0, 0.8));
+            height: 40px;
+            border-radius: 30px;
+            overflow: hidden;
+            padding: 5px 15px;
+
+
+            &::placeholder {
+                color: $color-light;
+                opacity: 0.95;
+            }
+        }
+
+        button {
+            transform: rotate(90deg) scale(1.7);
+            animation: cancelButtonAnimation 0.5s linear;
+        }
+    }
 }
