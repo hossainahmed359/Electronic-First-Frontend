@@ -1,0 +1,118 @@
+// MAX SCREEN XL || 1200px
+@media (max-width:$xl) {
+    .nav {
+
+        &__contents {
+            padding: 20px 0;
+
+            &__menus {
+
+                &__top {
+
+                    &__link {
+
+                        font-size: 13px;
+                        line-height: 20px;
+                        padding-bottom: 5px;
+
+                    }
+                }
+
+                &__bottom {
+
+
+                    width: 550px;
+                    height: 55px;
+
+
+
+
+                    &__dropdown-list {
+                        gap: 15px;
+
+                        &__item {
+                            img {
+
+                                height: 20px;
+
+                            }
+
+                            span {
+
+                                font-size: 13px;
+                                line-height: 20px;
+
+
+                            }
+
+                        }
+                    }
+
+                    &__search-bar {
+
+
+                        input[type='text'] {
+
+
+                            font-size: 13px;
+                            padding: 28px 15px;
+
+                        }
+
+                        p {
+                            font-size: 12px;
+                            right: 20px;
+                            bottom: -35px;
+
+                        }
+
+                        button {
+                            height: 55px;
+                            padding: 15px 20px;
+                            border-radius: 50%;
+
+
+                            img {
+
+                                width: 15px;
+
+                            }
+                        }
+
+                    }
+
+                }
+
+                .search-active &__bottom {
+
+                    &__search-bar {
+
+                        button {
+                            right: -45px;
+                        }
+                    }
+
+                }
+
+            }
+
+            &__cart-and-avatar {
+                button {
+                    padding: 10px;
+
+                    img {
+                        // width: 20px
+                        height: 20px;
+                    }
+                }
+
+                &__profile-icon {
+                    border-radius: 20px;
+
+
+                }
+
+            }
+        }
+    }
+}

@@ -96,6 +96,10 @@
                 border-radius: 10px;
                 padding: 25px;
 
+                @media (max-width:$xl) {
+                  width: 100%;
+                }
+
                 &__group {
 
                     &__header-section {
