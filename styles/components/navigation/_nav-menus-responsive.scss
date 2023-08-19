@@ -116,3 +116,47 @@
         }
     }
 }
+
+// MAX SCREEN MD || 768px
+@media (max-width:$md) {
+    .nav {
+
+        &__contents {
+            padding: 20px 0;
+
+            &__logo {
+                img {
+                    max-width: 70px;
+                }
+            }
+
+            &__menus {
+                display: none;
+            }
+
+            &__cart-and-avatar {
+               
+               margin-top: -5px;
+
+                &__profile-icon, &__cart-icon {
+                    padding: 5px;
+
+                    img {
+                        width: 20px // height: 15px;
+                    }
+                }
+
+                &__profile-icon {
+                    display: none;
+                    border-radius: 20px;
+
+                }
+
+                &__burger-menu {
+                    display: block;
+                }
+
+            }
+        }
+    }
+}
