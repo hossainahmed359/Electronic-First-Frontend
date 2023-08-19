@@ -38,6 +38,16 @@
     }
 }
 
+@keyframes showTest {
+    0% {
+        opacity: 0;
+    }
+
+    100% {
+        opacity: 1;
+    }
+}
+
 
 
 // NAVIGATION MENU
@@ -156,7 +166,19 @@
                             color: $color-light;
                             opacity: 0.95;
                         }
+                    }
 
+                    p {
+                        color: $color-light;
+                        font-family: $font-family-quantico;
+                        font-size: 13px;
+                        font-weight: 500;
+                        right: 20px;
+                        top: 0;
+                        height: 100%;
+                        bottom: -53px;
+                        margin: auto;
+                        display: none;
                     }
 
                     button {
@@ -168,6 +190,7 @@
                         border-radius: 50%;
                         background: rgba(253, 84, 1, 0.8);
                         background: linear-gradient(135deg, rgba(253, 84, 1, 0.8), rgba(255, 84, 0, 1.0));
+
 
                         img {
                             width: 20px;
@@ -199,7 +222,7 @@
                         background: rgba(253, 84, 1, 0.8);
                         background: linear-gradient(135deg, rgba(253, 84, 1, 1), rgba(255, 84, 0, 0.8));
                         animation: progressAnimation 0.5s linear;
-                   
+
                         &::before {
                             content: 'Advanced Search';
                             color: white;
@@ -207,6 +230,11 @@
                             position: relative;
                             z-index: 5;
                         }
+                    }
+
+                    p {
+                        display: block;
+                        animation: showTest 0.5s linear;
                     }
 
                     button {
