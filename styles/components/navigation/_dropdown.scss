@@ -1,0 +1,93 @@
+// NAVIGATION DROPDOWN
+.nav {
+
+    &__contents {
+
+        &__menus {
+
+            &__dropdown {
+                // background-color: rgba(52, 58, 64, 0.8);
+
+                // background-color: rgba(225, 225, 225, 0.5);
+                // box-shadow: 1.3rem 1.3rem 1.3rem rgba(0, 0, 0, 0.5);
+
+                // background: linear-gradient(to right bottom, rgba(225, 225, 225,0.5 ), rgba(225, 225, 225,0.3 ));
+                
+                // background: linear-gradient(to right bottom, rgba(225, 225, 225,0.8 ), rgba(225, 225, 225,0.5 ));
+
+                background: linear-gradient(to right bottom, rgba(52, 58,  64, 0.9), rgba(52, 58,  64, 0.3));
+
+                // rgba(52, 58,  64, 0.8)
+
+                margin: auto;
+                width: 746px;
+                border-radius: 10px;
+                padding: 25px;
+
+                &__group {
+
+                    &__header-section {
+                           background-color: rgba(225, 225, 225, 0.3);
+                           border-radius: 8px;
+                           padding: 10px 20px;
+
+                           p {
+                            font-size: 16px;
+                            font-family: $font-family-roboto;
+                            font-weight: 600;
+                           }
+
+                           button {
+                            font-size: 14px;
+                            font-family: $font-family-roboto;
+                            font-weight: 600;
+                           }
+                    }
+
+
+                    &__items {
+                        margin: 15px 0;
+                        grid-template-columns: repeat(1, 1fr);
+
+                        @media (min-width: $sm) {
+                            grid-template-columns: repeat(2, 1fr);
+                        }
+                
+                        @media (min-width: $md) {
+                            grid-template-columns: repeat(3, 1fr);
+                        }
+
+                        li {
+                            padding: 9px;
+                            cursor: pointer;
+
+                            p {
+                                font-size: 16px;
+                                font-family: $font-family-quantico;
+                                font-weight: 500;
+                            }
+
+                            img {
+                                max-height: 44px;
+                            }
+                        }
+                    }
+
+                    .platforms {
+                        li {
+                            border-radius: 30px;
+
+                            &:hover {
+                               background-color: rgba(225, 225, 225, 0.2);
+                            }
+                        }
+                    }
+                   
+                }
+
+                
+            }
+
+        }
+    }
+}

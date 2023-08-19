@@ -2,23 +2,23 @@
 <html lang="en">
 
 <head>
-  <meta charset="UTF-8" />
-  <link rel="icon" type="image/svg+xml" href="/ef-icon.png" />
-  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+	<meta charset="UTF-8" />
+	<link rel="icon" type="image/svg+xml" href="/ef-icon.png" />
+	<meta name="viewport" content="width=device-width, initial-scale=1.0" />
 
-  <!-- =========== FONTS =========== -->
-  <!-- Lato -->
-  <link rel="preconnect" href="https://fonts.googleapis.com">
-  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-  <link href="https://fonts.googleapis.com/css2?family=Lato:wght@300;400;700;900&display=swap" rel="stylesheet">
+	<!-- =========== FONTS =========== -->
+	<!-- Lato -->
+	<link rel="preconnect" href="https://fonts.googleapis.com">
+	<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+	<link href="https://fonts.googleapis.com/css2?family=Lato:wght@300;400;700;900&display=swap" rel="stylesheet">
 
-  <!-- Quantico -->
-  <link rel="preconnect" href="https://fonts.googleapis.com">
-  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-  <link href="https://fonts.googleapis.com/css2?family=Quantico:wght@400;700&display=swap" rel="stylesheet">
+	<!-- Quantico -->
+	<link rel="preconnect" href="https://fonts.googleapis.com">
+	<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+	<link href="https://fonts.googleapis.com/css2?family=Quantico:wght@400;700&display=swap" rel="stylesheet">
 
-  <!-- =========== SITE TITLE =========== -->
-  <title>Electronic First</title>
+	<!-- =========== SITE TITLE =========== -->
+	<title>Electronic First</title>
 </head>
 
 <!-- =========== SITE BODY =========== -->
@@ -33,273 +33,381 @@ BEM REFERENCES
  -->
 
 <body id="home" class="bg-dark">
-  <!-- =========== HERO SECTION =========== -->
-  <section id="hero" class="bg-hero relative w-100">
-    <!-- =========== NAVIGATION =========== -->
-    <div class="nav w-100 absolute">
-      <div class="container-fluid">
-        <div class="nav__contents flex items-start justify-between">
-           <!-- =========== COMPANY LOGO =========== -->
-          <div class="nav__contents__logo flex items-center justify-center">
-            <img src="/public/images/ef-nav-icon.webp" class="w-100 h-auto" alt="Electronic First">
-          </div>
-          <!-- =========== MENUS =========== -->
-          <div class="nav__contents__menus flex flex-col items-center justify-center gap-5 relative">
-            <!-- =========== TOP MENUS =========== -->
-            <div class="nav__contents__menus__top">
-              <ul class="flex justify-center items-center gap-5">
-                <li>
-                  <a class="nav__contents__menus__top__link" href="#">Trending</a>
-                </li>
-                <li>
-                  <a class="nav__contents__menus__top__link" href="#">Pre-orders</a>
-                </li>
-                <li>
-                  <a class="nav__contents__menus__top__link" href="#">Upcoming</a>
-                </li>
-                <li>
-                  <a class="nav__contents__menus__top__link" href="#">Support 24/7</a>
-                </li>
-              </ul>
-            </div>
-            <!-- =========== BOTTOM MENUS =========== -->
-            <div id="nav-bottom-menu" class="nav__contents__menus__bottom relative"> <!--ADD Class: search-active -->
-                <ul class="nav__contents__menus__bottom__dropdown-list flex justify-center items-center gap-5 absolute z-0">
-                  <li>
-                    <button class="nav__contents__menus__bottom__dropdown-list__item flex justify-center items-center gap-2">
-                      <div class="flex justify-center items-center">
-                        <img src="/public//images/icons/display.svg" alt="pc">
-                      </div>
-                      <span>PC</span>
-                    </button>
-                  </li>
-                  <li>
-                    <button class="nav__contents__menus__bottom__dropdown-list__item flex justify-center items-center gap-2">
-                      <div class="flex justify-center items-center">
-                        <img src="/public//images/icons/playstation.svg" alt="playstation">
-                      </div>
-                      <span>Playstation</span>
-                    </button>
-                  </li>
-                  <li>
-                    <button class="nav__contents__menus__bottom__dropdown-list__item flex justify-center items-center gap-2">
-                      <div class="flex justify-center items-center">
-                        <img src="/public//images/icons/xbox.svg" alt="xbox">
-                      </div>
-                      <span>Xbox</span>
-                    </button>
-                  </li>
-                  <li>
-                    <button class="nav__contents__menus__bottom__dropdown-list__item flex justify-center items-center gap-2">
-                      <div class="flex justify-center items-center">
-                        <img src="/public//images/icons/nintendo-switch.svg" alt="nintendo-switch">
-                      </div>
-                      <span>Nintendo</span>
-                    </button>
-                  </li>
-                </ul>
-                <div class="nav__contents__menus__bottom__search-bar relative z-10">
-                  <input id="search-input" class="absolute" type="text" placeholder="Search your games">
-                  <button id="search-btn" class="flex justify-center items-center absolute ">
-                    <img id="search-icon" class="nav__contents__menus__bottom__search-bar__search-icon" src="/public/images/icons/search.svg" alt="search">
-                    <img id="search-cancel-icon" class="nav__contents__menus__bottom__search-bar__cancel-icon" src="/public/images/icons/cancel.svg" alt="search">
-                  </button>
-                </div>
-              <div>
+	<!-- =========== HERO SECTION =========== -->
+	<section id="hero" class="bg-hero relative w-100">
+		<!-- =========== NAVIGATION =========== -->
+		<div class="nav w-100 absolute">
+			<div class="container-fluid">
+				<div class="nav__contents flex items-start justify-between">
+					<!-- =========== COMPANY LOGO =========== -->
+					<div class="nav__contents__logo flex items-center justify-center">
+						<img src="/public/images/ef-nav-icon.webp" class="w-100 h-auto" alt="Electronic First">
+					</div>
+					<!-- =========== MENUS =========== -->
+					<div class="nav__contents__menus">
+						<!-- =========== MENU SECTION =========== -->
+						<div class="flex flex-col items-center justify-center gap-5 relative">
+							<!-- =========== TOP MENUS =========== -->
+							<div class="nav__contents__menus__top">
+								<ul class="flex justify-center items-center gap-5">
+									<li>
+										<a class="nav__contents__menus__top__link" href="#">Trending</a>
+									</li>
+									<li>
+										<a class="nav__contents__menus__top__link" href="#">Pre-orders</a>
+									</li>
+									<li>
+										<a class="nav__contents__menus__top__link" href="#">Upcoming</a>
+									</li>
+									<li>
+										<a class="nav__contents__menus__top__link" href="#">Support 24/7</a>
+									</li>
+								</ul>
+							</div>
 
-              </div>
-            </div>
-            <!-- =========== DROPDOWN MENUS =========== -->
-          </div>
-          <!-- =========== CART & USER =========== -->
-          <div class="nav__contents__cart-and-avatar flex items-center justify-center gap-2">
-            <button class="nav__contents__cart-and-avatar__cart-icon flex items-center justify-center">
-              <img src="/public/images/icons/cart.svg" alt="cart">
-            </button>
-            <button class="nav__contents__cart-and-avatar__profile-icon flex items-center justify-center">
-              <img src="/public/images/icons/person.svg" alt="profile">
-            </button>
-          </div>
-        </div>
-      </div>
+							<!-- =========== BOTTOM MENUS =========== -->
+							<div id="nav-bottom-menu" class="nav__contents__menus__bottom relative"> <!--ADD Class: search-active -->
+								<ul
+									class="nav__contents__menus__bottom__dropdown-list flex justify-center items-center gap-5 absolute z-0">
+									<li>
+										<button
+											class="nav__contents__menus__bottom__dropdown-list__item flex justify-center items-center gap-2">
+											<div class="flex justify-center items-center">
+												<img src="/public//images/icons/display.svg" alt="pc">
+											</div>
+											<span>PC</span>
+										</button>
+									</li>
+									<li>
+										<button
+											class="nav__contents__menus__bottom__dropdown-list__item flex justify-center items-center gap-2">
+											<div class="flex justify-center items-center">
+												<img src="/public//images/icons/playstation.svg" alt="playstation">
+											</div>
+											<span>Playstation</span>
+										</button>
+									</li>
+									<li>
+										<button
+											class="nav__contents__menus__bottom__dropdown-list__item flex justify-center items-center gap-2">
+											<div class="flex justify-center items-center">
+												<img src="/public//images/icons/xbox.svg" alt="xbox">
+											</div>
+											<span>Xbox</span>
+										</button>
+									</li>
+									<li>
+										<button
+											class="nav__contents__menus__bottom__dropdown-list__item flex justify-center items-center gap-2">
+											<div class="flex justify-center items-center">
+												<img src="/public//images/icons/nintendo-switch.svg"
+													alt="nintendo-switch">
+											</div>
+											<span>Nintendo</span>
+										</button>
+									</li>
+								</ul>
+								<div class="nav__contents__menus__bottom__search-bar relative z-10">
+									<input id="search-input" class="absolute" type="text"
+										placeholder="Search your games">
+									<button id="search-btn" class="flex justify-center items-center absolute ">
+										<img id="search-icon"
+											class="nav__contents__menus__bottom__search-bar__search-icon"
+											src="/public/images/icons/search.svg" alt="search">
+										<img id="search-cancel-icon"
+											class="nav__contents__menus__bottom__search-bar__cancel-icon"
+											src="/public/images/icons/cancel.svg" alt="search">
+									</button>
+								</div>
+								<div>
 
-    </div>
-    <!-- =========== HERO =========== -->
-    <div class="hero">
-      <div class="container">
-        <div class="flex flex-col justify-center items-start w-100">
-          <div class="avaiability-tag">
-            <p class="avaiability-tag__text">In 15 days</p>
-          </div>
-          <h1 class="hero__title">
-            Starfield Digital Premium <br /> Edition + Early Access
-          </h1>
-          <div class="flex justify-start items-start gap-5">
-            <div class="discount-tag relative">
-              <p class="discount-tag__text relative z-10">-25%</p>
-              <div class="discount-tag__shape absolute z-0"></div>
-            </div>
-            <p class="hero__price">74.89€</p>
-          </div>
-        </div>
+								</div>
+							</div>
 
-      </div>
-    </div>
-    <div class="wave absolute z-10 w-100 ">
-      <img src="/public/images/wave.svg" alt="">
-    </div>
-  </section>
-  <!-- =========== PRODUCTS SECTION =========== -->
-  <section id="trending-products" class="section w-100">
-    <div class="container">
-      <!-- =========== SECTION HEADER CONTAINER ===========-->
-      <div class="section__header-container flex justify-between items-center">
-        <h2 class="section__header-container__heading">Trending</h2>
-        <button class="section__header-container__right-btn">View All</button>
-      </div>
-      <!-- =========== SECTION BODY =========== -->
-      <div class="section__body">
-        <div class="product-cards grid gap-5">
-          <div class="card">
-            <div class="card__top relative">
-              <div class="card__top__img-container flex justify-center items-center">
-                <img class="w-100 h-auto"
-                  src="https://static.electronicfirst.com/website/uploads/2023/08/05/banner_slider_1691255544_64ce82f80b28c.webp"
-                  alt="product-image">
-              </div>
-              <div class="card__top__discount-tag-cotainer absolute">
-                <div class="discount-tag relative">
-                  <p class="discount-tag__text relative z-10">-25%</p>
-                  <div class="discount-tag__shape absolute z-0"></div>
-                </div>
-              </div>
-            </div>
-            <div class="card__bottom flex justify-between items-center">
-              <div class="flex items-center justify-start gap-1">
-                <p class="card__bottom__dlc-tag">DLC</p>
-                <p class="card__bottom__title "> Sengoku Dynasty</p>
-              </div>
-              <div>
-                <p class="card__bottom__price">19.99€</p>
-              </div>
-            </div>
-          </div>
-          <div class="card">
-            <div class="card__top relative">
-              <div class="card__top__img-container flex justify-center items-center">
-                <img class="w-100 h-auto"
-                  src="https://static.electronicfirst.com/website/uploads/2023/08/05/banner_slider_1691255544_64ce82f80b28c.webp"
-                  alt="product-image">
-              </div>
-              <div class="card__top__discount-tag-cotainer absolute">
-                <div class="discount-tag relative">
-                  <p class="discount-tag__text relative z-10">-25%</p>
-                  <div class="discount-tag__shape absolute z-0"></div>
-                </div>
-              </div>
-            </div>
-            <div class="card__bottom flex justify-between items-center">
-              <div class="flex items-center justify-start gap-1">
-                <p class="card__bottom__dlc-tag">DLC</p>
-                <p class="card__bottom__title "> Sengoku Dynasty</p>
-              </div>
-              <div>
-                <p class="card__bottom__price">19.99€</p>
-              </div>
-            </div>
-          </div>
-          <div class="card">
-            <div class="card__top relative">
-              <div class="card__top__img-container flex justify-center items-center">
-                <img class="w-100 h-auto"
-                  src="https://static.electronicfirst.com/website/uploads/2023/08/05/banner_slider_1691255544_64ce82f80b28c.webp"
-                  alt="product-image">
-              </div>
-              <div class="card__top__discount-tag-cotainer absolute">
-                <div class="discount-tag relative">
-                  <p class="discount-tag__text relative z-10">-25%</p>
-                  <div class="discount-tag__shape absolute z-0"></div>
-                </div>
-              </div>
-            </div>
-            <div class="card__bottom flex justify-between items-center">
-              <div class="flex items-center justify-start gap-1">
-                <p class="card__bottom__dlc-tag">DLC</p>
-                <p class="card__bottom__title "> Sengoku Dynasty</p>
-              </div>
-              <div>
-                <p class="card__bottom__price">19.99€</p>
-              </div>
-            </div>
-          </div>
-          <div class="card">
-            <div class="card__top relative">
-              <div class="card__top__img-container flex justify-center items-center">
-                <img class="w-100 h-auto"
-                  src="https://static.electronicfirst.com/website/uploads/2023/08/05/banner_slider_1691255544_64ce82f80b28c.webp"
-                  alt="product-image">
-              </div>
-              <div class="card__top__discount-tag-cotainer absolute">
-                <div class="discount-tag relative">
-                  <p class="discount-tag__text relative z-10">-25%</p>
-                  <div class="discount-tag__shape absolute z-0"></div>
-                </div>
-              </div>
-            </div>
-            <div class="card__bottom flex justify-between items-center">
-              <div class="flex items-center justify-start gap-1">
-                <p class="card__bottom__dlc-tag">DLC</p>
-                <p class="card__bottom__title "> Sengoku Dynasty</p>
-              </div>
-              <div>
-                <p class="card__bottom__price">19.99€</p>
-              </div>
-            </div>
-          </div>
-          <div class="card">
-            <div class="card__top relative">
-              <div class="card__top__img-container flex justify-center items-center">
-                <img class="w-100 h-auto"
-                  src="https://static.electronicfirst.com/website/uploads/2023/08/05/banner_slider_1691255544_64ce82f80b28c.webp"
-                  alt="product-image">
-              </div>
-              <div class="card__top__discount-tag-cotainer absolute">
-                <div class="discount-tag relative">
-                  <p class="discount-tag__text relative z-10">-25%</p>
-                  <div class="discount-tag__shape absolute z-0"></div>
-                </div>
-              </div>
-            </div>
-            <div class="card__bottom flex justify-between items-center">
-              <div class="flex items-center justify-start gap-1">
-                <p class="card__bottom__dlc-tag">DLC</p>
-                <p class="card__bottom__title "> Sengoku Dynasty</p>
-              </div>
-              <div>
-                <p class="card__bottom__price">19.99€</p>
-              </div>
-            </div>
-          </div>
-        </div>
+							<!-- =========== DROPDOWN SECTION =========== -->
+							<div class="nav__contents__menus__dropdown relative z-50">
+								<div class="flex flex-col items-center justify-center gap-5">
+									<!-- =========== PLATFORM GROUP =========== -->
+									<div class="nav__contents__menus__dropdown__group w-100">
+										<div class="nav__contents__menus__dropdown__group__header-section flex justify-between items-center " >
+											<p>Platforms</p>
+											<button>View All</p>
+										</div>
+										<ul class="nav__contents__menus__dropdown__group__items platforms grid gap-1">
+											<li class="flex items-center justify-start gap-2">
+												<div class="flex justify-center items-center">
+													<img src="public/images/logos/steam.png" class="w-100 h-100" alt="steam">
+												</div>
+												<p >Steam</p>
+											</li>
+											<li class="flex items-center justify-start gap-2">
+												<div class="flex justify-center items-center">
+													<img src="public/images/logos/ubisoft.png" class="w-100 h-100" alt="ubisoft">
+												</div>
+												<p >Ubisoft</p>
+											</li>
+											<li class="flex items-center justify-start gap-2">
+												<div class="flex justify-center items-center">
+													<img src="public/images/logos/ea-app.png" class="w-100 h-100" alt="EA App">
+												</div>
+												<p >EA App</p>
+											</li>
+											<li class="flex items-center justify-start gap-2">
+												<div class="flex justify-center items-center">
+													<img src="public/images/logos/battle-net.png" class="w-100 h-100" alt="Battle.net">
+												</div>
+												<p >Battle.net</p>
+											</li>
+											<li class="flex items-center justify-start gap-2">
+												<div class="flex justify-center items-center">
+													<img src="public/images/logos/rockstart.png" class="w-100 h-100" alt="Rockstar">
+												</div>
+												<p >Rockstar</p>
+											</li>
+											<li class="flex items-center justify-start gap-2">
+												<div class="flex justify-center items-center">
+													<img src="public/images/logos/gog.png" class="w-100 h-100" alt="GOG.com">
+												</div>
+												<p >GOG.com</p>
+											</li>
+											<li class="flex items-center justify-start gap-2">
+												<div class="flex justify-center items-center">
+													<img src="public/images/logos/microsoft.png" class="w-100 h-100" alt="Microsoft Store">
+												</div>
+												<p >Microsoft Store</p>
+											</li>
+											<li class="flex items-center justify-start gap-2">
+												<div class="flex justify-center items-center">
+													<img src="public/images/logos/epic-games.png" class="w-100 h-100" alt="Epic">
+												</div>
+												<p >Epic</p>
+											</li>
+										</ul>
+									</div>
+									
+									<!-- =========== PAYMENT GROUP =========== -->
+									<div class="nav__contents__menus__dropdown__group w-100">
+										<div class="nav__contents__menus__dropdown__group__header-section flex justify-between items-center " >
+											<p>Prepaid Card</p>
+											<button>View All</p>
+										</div>
+										<ul class="nav__contents__menus__dropdown__group__items grid gap-1">
+											<li class="flex flex-col items-center justify-center gap-1">
+												<div class="flex justify-center items-center">
+													<img src="public/images/logos/steam-white.png" class="w-100 h-100" alt="steam">
+												</div>
+												<p>Steam Gift Cards</p>
+											</li>
+											<li class="flex flex-col items-center justify-center gap-1">
+												<div class="flex justify-center items-center">
+													<img src="public/images/logos/instant-gaming.png" class="w-100 h-100" alt="Instant Gaming">
+												</div>
+												<p>IG Gift Cards</p>
+											</li>
+											<li class="flex flex-col items-center justify-center gap-1">
+												<div class="flex justify-center items-center">
+													<img src="public/images/logos/blizzard.png" class="w-100 h-100" alt="blizzard">
+												</div>
+												<p>Blizzard Gift Card</p>
+											</li>
 
-      </div>
-    </div>
-  </section>
-  <!-- =========== FOOTER  ===========-->
-  <br>
-  <br>
-  <br>
-  <br>
-  <br>
-  <br>
-  <br>
-  <br>
-  <br>
-  <br>
-  <br>
-  <br>
-  <footer>Footer</footer>
-  <script type="module" src="/main.js"></script>
+										</ul>
+									</div>
+								</div>
+							</div>
+						</div>
+
+
+					</div>
+					<!-- =========== CART & USER =========== -->
+					<div class="nav__contents__cart-and-avatar flex items-center justify-center gap-2">
+						<button class="nav__contents__cart-and-avatar__cart-icon flex items-center justify-center">
+							<img src="/public/images/icons/cart.svg" alt="cart">
+						</button>
+						<button class="nav__contents__cart-and-avatar__profile-icon flex items-center justify-center">
+							<img src="/public/images/icons/person.svg" alt="profile">
+						</button>
+					</div>
+				</div>
+			</div>
+
+		</div>
+		<!-- =========== HERO =========== -->
+		<div class="hero">
+			<div class="container">
+				<div class="flex flex-col justify-center items-start w-100">
+					<div class="avaiability-tag">
+						<p class="avaiability-tag__text">In 15 days</p>
+					</div>
+					<h1 class="hero__title">
+						Starfield Digital Premium <br /> Edition + Early Access
+					</h1>
+					<div class="flex justify-start items-start gap-5">
+						<div class="discount-tag relative">
+							<p class="discount-tag__text relative z-10">-25%</p>
+							<div class="discount-tag__shape absolute z-0"></div>
+						</div>
+						<p class="hero__price">74.89€</p>
+					</div>
+				</div>
+
+			</div>
+		</div>
+		<div class="wave absolute z-10 w-100 ">
+			<img src="/public/images/wave.svg" alt="">
+		</div>
+	</section>
+	<!-- =========== PRODUCTS SECTION =========== -->
+	<section id="trending-products" class="section w-100">
+		<div class="container">
+			<!-- =========== SECTION HEADER CONTAINER ===========-->
+			<div class="section__header-container flex justify-between items-center">
+				<h2 class="section__header-container__heading">Trending</h2>
+				<button class="section__header-container__right-btn">View All</button>
+			</div>
+			<!-- =========== SECTION BODY =========== -->
+			<div class="section__body">
+				<div class="product-cards grid gap-5">
+					<div class="card">
+						<div class="card__top relative">
+							<div class="card__top__img-container flex justify-center items-center">
+								<img class="w-100 h-auto"
+									src="https://static.electronicfirst.com/website/uploads/2023/08/05/banner_slider_1691255544_64ce82f80b28c.webp"
+									alt="product-image">
+							</div>
+							<div class="card__top__discount-tag-cotainer absolute">
+								<div class="discount-tag relative">
+									<p class="discount-tag__text relative z-10">-25%</p>
+									<div class="discount-tag__shape absolute z-0"></div>
+								</div>
+							</div>
+						</div>
+						<div class="card__bottom flex justify-between items-center">
+							<div class="flex items-center justify-start gap-1">
+								<p class="card__bottom__dlc-tag">DLC</p>
+								<p class="card__bottom__title "> Sengoku Dynasty</p>
+							</div>
+							<div>
+								<p class="card__bottom__price">19.99€</p>
+							</div>
+						</div>
+					</div>
+					<div class="card">
+						<div class="card__top relative">
+							<div class="card__top__img-container flex justify-center items-center">
+								<img class="w-100 h-auto"
+									src="https://static.electronicfirst.com/website/uploads/2023/08/05/banner_slider_1691255544_64ce82f80b28c.webp"
+									alt="product-image">
+							</div>
+							<div class="card__top__discount-tag-cotainer absolute">
+								<div class="discount-tag relative">
+									<p class="discount-tag__text relative z-10">-25%</p>
+									<div class="discount-tag__shape absolute z-0"></div>
+								</div>
+							</div>
+						</div>
+						<div class="card__bottom flex justify-between items-center">
+							<div class="flex items-center justify-start gap-1">
+								<p class="card__bottom__dlc-tag">DLC</p>
+								<p class="card__bottom__title "> Sengoku Dynasty</p>
+							</div>
+							<div>
+								<p class="card__bottom__price">19.99€</p>
+							</div>
+						</div>
+					</div>
+					<div class="card">
+						<div class="card__top relative">
+							<div class="card__top__img-container flex justify-center items-center">
+								<img class="w-100 h-auto"
+									src="https://static.electronicfirst.com/website/uploads/2023/08/05/banner_slider_1691255544_64ce82f80b28c.webp"
+									alt="product-image">
+							</div>
+							<div class="card__top__discount-tag-cotainer absolute">
+								<div class="discount-tag relative">
+									<p class="discount-tag__text relative z-10">-25%</p>
+									<div class="discount-tag__shape absolute z-0"></div>
+								</div>
+							</div>
+						</div>
+						<div class="card__bottom flex justify-between items-center">
+							<div class="flex items-center justify-start gap-1">
+								<p class="card__bottom__dlc-tag">DLC</p>
+								<p class="card__bottom__title "> Sengoku Dynasty</p>
+							</div>
+							<div>
+								<p class="card__bottom__price">19.99€</p>
+							</div>
+						</div>
+					</div>
+					<div class="card">
+						<div class="card__top relative">
+							<div class="card__top__img-container flex justify-center items-center">
+								<img class="w-100 h-auto"
+									src="https://static.electronicfirst.com/website/uploads/2023/08/05/banner_slider_1691255544_64ce82f80b28c.webp"
+									alt="product-image">
+							</div>
+							<div class="card__top__discount-tag-cotainer absolute">
+								<div class="discount-tag relative">
+									<p class="discount-tag__text relative z-10">-25%</p>
+									<div class="discount-tag__shape absolute z-0"></div>
+								</div>
+							</div>
+						</div>
+						<div class="card__bottom flex justify-between items-center">
+							<div class="flex items-center justify-start gap-1">
+								<p class="card__bottom__dlc-tag">DLC</p>
+								<p class="card__bottom__title "> Sengoku Dynasty</p>
+							</div>
+							<div>
+								<p class="card__bottom__price">19.99€</p>
+							</div>
+						</div>
+					</div>
+					<div class="card">
+						<div class="card__top relative">
+							<div class="card__top__img-container flex justify-center items-center">
+								<img class="w-100 h-auto"
+									src="https://static.electronicfirst.com/website/uploads/2023/08/05/banner_slider_1691255544_64ce82f80b28c.webp"
+									alt="product-image">
+							</div>
+							<div class="card__top__discount-tag-cotainer absolute">
+								<div class="discount-tag relative">
+									<p class="discount-tag__text relative z-10">-25%</p>
+									<div class="discount-tag__shape absolute z-0"></div>
+								</div>
+							</div>
+						</div>
+						<div class="card__bottom flex justify-between items-center">
+							<div class="flex items-center justify-start gap-1">
+								<p class="card__bottom__dlc-tag">DLC</p>
+								<p class="card__bottom__title "> Sengoku Dynasty</p>
+							</div>
+							<div>
+								<p class="card__bottom__price">19.99€</p>
+							</div>
+						</div>
+					</div>
+				</div>
+
+			</div>
+		</div>
+	</section>
+	<!-- =========== FOOTER  ===========-->
+	<br>
+	<br>
+	<br>
+	<br>
+	<br>
+	<br>
+	<br>
+	<br>
+	<br>
+	<br>
+	<br>
+	<br>
+	<footer>Footer</footer>
+	<script type="module" src="/main.js"></script>
 </body>
 
 </html>
