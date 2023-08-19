@@ -214,6 +214,7 @@
 
                     &__cancel-icon {
                         display: block;
+                        transform: rotate(90deg) scale(1.5);
                         animation: cancelButtonAnimation 0.5s linear;
 
                     }
