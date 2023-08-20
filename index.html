@@ -23,34 +23,101 @@
 
 <!-- =========== SITE BODY =========== -->
 
-<!-- 
-BEM REFERENCES
-.card -> Block
-.card__button -> Element Inside Card Block
-.card__button--secondary -> Modifiers Of The Element
-.card__button--primary 
-
- -->
 
 <body id="home" class="bg-dark">
-
 	<!-- =========== OFFCANVAS =========== -->
 	<section id="ef-offcanvas" class="offcanvas fixed z-max h-screen d-none">
-		<div class="offcanvas__header flex justify-between items-center" >
-			<p class="offcanvas__header__title">Menu</p>
+		<div class="offcanvas__header flex justify-between items-center">
+			<p class="offcanvas__header__title"><button id="show-parent-list-btn" class="offcanvas__header__title__back-btn d-none"></button> Menu</p>
 			<button id="close-offcanvas-btn" class="offcanvas__header__close-btn flex items-center justify-center">
 				<img class="h-auto" src="/public/images/icons/cancel.svg" alt="offcanvas-close-btn">
 			</button>
 		</div>
-		<ul class="offcanvas__list flex flex-col items-start justify-start">
-			<li class="offcanvas__list__item w-100">
-				<button class="offcanvas__list__item__btn">Trending</button>
-			</li>
-			<li class="offcanvas__list__item has-sublist w-100">
-				<button>PC</button>
-				<span class="has-sublist__arrow-icon"></span>
-			</li>
-		</ul>
+		<div class="offcanvas__body">
+			<ul id="offcanvas-menu-list" class="offcanvas__body__list ">
+				<li class="offcanvas__body__list__item w-100">
+					<button class="offcanvas__body__list__item__btn">Trending</button>
+				</li>
+				<li class="offcanvas__body__list__item w-100">
+					<button class="offcanvas__body__list__item__btn">Pre-Orders</button>
+				</li>
+				<li class="offcanvas__body__list__item w-100">
+					<button class="offcanvas__body__list__item__btn">Upcoming</button>
+				</li>
+				<li class="offcanvas__body__list__item w-100">
+					<button class="offcanvas__body__list__item__btn">Support 24/7</button>
+				</li>
+				<li class="offcanvas__body__list__item has-sublist w-100">
+					<button class="offcanvas__body__list__item__btn">PC <span class="right-arrow-icon"></span></button>
+				</li>
+				<li class="offcanvas__body__list__item has-sublist w-100">
+					<button class="offcanvas__body__list__item__btn">Playstation <span
+							class="right-arrow-icon"></span></button>
+				</li>
+				<li class="offcanvas__body__list__item has-sublist w-100">
+					<button class="offcanvas__body__list__item__btn">Xbox <span
+							class="right-arrow-icon"></span></button>
+				</li>
+				<li class="offcanvas__body__list__item has-sublist w-100">
+					<button class="offcanvas__body__list__item__btn">Nintendo <span
+							class="right-arrow-icon"></span></button>
+					<!-- <ul class="offcanvas__body__list sub-list">
+						<li class="offcanvas__body__list__item w-100">
+							<button class="offcanvas__body__list__item__btn">Nested Menu One</button>
+						</li>
+						<li class="offcanvas__body__list__item w-100">
+							<button class="offcanvas__body__list__item__btn">Nested Menu Two</button>
+						</li>
+						<li class="offcanvas__body__list__item w-100">
+							<button class="offcanvas__body__list__item__btn">Nested Menu Three</button>
+						</li>
+					</ul> -->
+				</li>
+			</ul>
+			<ul id="offcanvas-submenu-list" class="offcanvas__body__list d-none">
+				<!-- PLATFORMS -->
+				<li class="offcanvas__body__list__item w-100 ">
+					<button class="offcanvas__body__list__item__btn active">Platforms</button>
+				</li>
+				<li class="offcanvas__body__list__item w-100">
+					<button class="offcanvas__body__list__item__btn">Steam</button>
+				</li>
+				<li class="offcanvas__body__list__item w-100">
+					<button class="offcanvas__body__list__item__btn">Ubisoft</button>
+				</li>
+				<li class="offcanvas__body__list__item w-100">
+					<button class="offcanvas__body__list__item__btn">EA App</button>
+				</li>
+				<li class="offcanvas__body__list__item w-100">
+					<button class="offcanvas__body__list__item__btn">Battle.net</button>
+				</li>
+				<li class="offcanvas__body__list__item w-100">
+					<button class="offcanvas__body__list__item__btn">Rockstar</button>
+				</li>
+				<li class="offcanvas__body__list__item w-100">
+					<button class="offcanvas__body__list__item__btn">GOG.com</button>
+				</li>
+				<li class="offcanvas__body__list__item w-100">
+					<button class="offcanvas__body__list__item__btn">Microsoft Store</button>
+				</li>
+				<li class="offcanvas__body__list__item w-100">
+					<button class="offcanvas__body__list__item__btn">Epic</button>
+				</li>
+				<!-- PREPAID CARD -->
+				<li class="offcanvas__body__list__item w-100 ">
+					<button class="offcanvas__body__list__item__btn active">Prepaid Card</button>
+				</li>
+				<li class="offcanvas__body__list__item w-100">
+					<button class="offcanvas__body__list__item__btn">Steam Gift Cards</button>
+				</li>
+				<li class="offcanvas__body__list__item w-100">
+					<button class="offcanvas__body__list__item__btn">IG Gift Cards</button>
+				</li><li class="offcanvas__body__list__item w-100">
+					<button class="offcanvas__body__list__item__btn">Blizzard Gift Cards</button>
+				</li>
+			</ul>
+		</div>
+
 	</section>
 
 	<!-- =========== HERO SECTION =========== -->

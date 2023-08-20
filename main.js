@@ -4,7 +4,7 @@ import useSearch from './script/useSearch';
 import useDropdown from './script/useDropdown';
 import useAddEvent from './script/useAddEvent';
 
-const { handleOffcanvasShow, handleOffcanvasClose } = useOffcanvas();
+const {showParentListBtn, showChildMenuList, handleOffcanvasShow, handleOffcanvasClose } = useOffcanvas();
 const { handleSearchOn, handleSearchClose, handleMoblieSearchOn, handleMobileSearchClose } = useSearch();
 const { handleDropdownShow, handleDropdownClose } = useDropdown();
 const { addEventToMultitpleElements } = useAddEvent();
@@ -70,6 +70,21 @@ const arrayOfListedElements = [
         event: 'click',
         callback: handleOffcanvasClose
     },
+    {
+        className: 'has-sublist',
+        event: 'click',
+        callback: () => {
+            showChildMenuList(); 
+            showParentListBtn();
+        }
+    },
 ]
 
 addEventToMultitpleElements(arrayOfListedElements);
+
+
+
+
+
+
+

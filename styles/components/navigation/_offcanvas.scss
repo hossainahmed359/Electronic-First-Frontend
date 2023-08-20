@@ -33,14 +33,103 @@
 }
 
 .slide-in-left {
-	-webkit-animation: slide-in-offcanvas 0.3s linear;
-	        animation: slide-in-offcanvas 0.3s linear;
+    -webkit-animation: slide-in-offcanvas 0.3s linear;
+    animation: slide-in-offcanvas 0.3s linear;
 }
 
 .slide-out-right {
-	-webkit-animation: slide-out-offcanvas 0.3s linear;
-	        animation: slide-out-offcanvas 0.3s linear;
+    -webkit-animation: slide-out-offcanvas 0.3s linear;
+    animation: slide-out-offcanvas 0.3s linear;
 }
+
+
+// OFFCANVAS BODY LIST SHOW ANIMATION
+.scale-in-hor-left {
+    -webkit-animation: scale-in-hor-left 0.5s cubic-bezier(0.250, 0.460, 0.450, 0.940) both;
+    animation: scale-in-hor-left 0.5s cubic-bezier(0.250, 0.460, 0.450, 0.940) both;
+}
+
+.scale-in-hor-right {
+    -webkit-animation: scale-in-hor-right 0.5s cubic-bezier(0.250, 0.460, 0.450, 0.940) both;
+    animation: scale-in-hor-right 0.5s cubic-bezier(0.250, 0.460, 0.450, 0.940) both;
+}
+
+// left
+@-webkit-keyframes scale-in-hor-left {
+    0% {
+        -webkit-transform: scaleX(0);
+        transform: scaleX(0);
+        -webkit-transform-origin: 0% 0%;
+        transform-origin: 0% 0%;
+        opacity: 1;
+    }
+
+    100% {
+        -webkit-transform: scaleX(1);
+        transform: scaleX(1);
+        -webkit-transform-origin: 0% 0%;
+        transform-origin: 0% 0%;
+        opacity: 1;
+    }
+}
+
+@keyframes scale-in-hor-left {
+    0% {
+        -webkit-transform: scaleX(0);
+        transform: scaleX(0);
+        -webkit-transform-origin: 0% 0%;
+        transform-origin: 0% 0%;
+        opacity: 1;
+    }
+
+    100% {
+        -webkit-transform: scaleX(1);
+        transform: scaleX(1);
+        -webkit-transform-origin: 0% 0%;
+        transform-origin: 0% 0%;
+        opacity: 1;
+    }
+}
+
+// Right
+@-webkit-keyframes scale-in-hor-right {
+    0% {
+        -webkit-transform: scaleX(0);
+        transform: scaleX(0);
+        -webkit-transform-origin: 100% 100%;
+        transform-origin: 100% 100%;
+        opacity: 1;
+    }
+
+    100% {
+        -webkit-transform: scaleX(1);
+        transform: scaleX(1);
+        -webkit-transform-origin: 100% 100%;
+        transform-origin: 100% 100%;
+        opacity: 1;
+    }
+}
+
+@keyframes scale-in-hor-right {
+    0% {
+        -webkit-transform: scaleX(0);
+        transform: scaleX(0);
+        -webkit-transform-origin: 100% 100%;
+        transform-origin: 100% 100%;
+        opacity: 1;
+    }
+
+    100% {
+        -webkit-transform: scaleX(1);
+        transform: scaleX(1);
+        -webkit-transform-origin: 100% 100%;
+        transform-origin: 100% 100%;
+        opacity: 1;
+    }
+}
+
+
+
 
 
 // OFFCANVAS
@@ -62,6 +151,16 @@
             color: $color-oranage;
             font-size: 18px;
             line-height: 20px;
+
+            &__back-btn {
+                margin-right: 3px;
+                width: 12px;
+                height: 12px;
+                line-height: 20px;
+                border-bottom: 2px solid $color-oranage;
+                border-left: 2px solid $color-oranage;
+                transform: rotate(45deg);
+            }
         }
 
         &__close-btn {
@@ -80,68 +179,95 @@
         }
     }
 
-    &__list {
-        &__item {
-            cursor: pointer;
-            position: relative;
-            padding-top: 20px;
-            padding-bottom: 20px;
+    &__body {
 
-            &::after {
-                content: '';
-                position: absolute;
-                border-bottom: 1px solid $color-dark-gray;
-                width: 100%;
-                bottom: 0;
-                left: 0;
-                right: 0;
-                margin: auto;
-            }
+        position: relative;
 
-            &::before {
-                content: '';
-                position: absolute;
-                border-bottom: 2px solid $color-oranage;
-                width: 0;
-                bottom: 0;
-                left: 0;
-                margin: auto;
-                z-index: 1;
-                transition:  all 0.3s;
-            }
 
-            &:hover {
-                &::before {
-                    width: 70px;
+        &__list {
+
+            position: absolute;
+            width: 100%;
+            background-color: $color-ultra-dark;
+            top: 0;
+            left: 0;
+
+            &__item {
+                cursor: pointer;
+                position: relative;
+                padding-top: 20px;
+                padding-bottom: 20px;
+
+                &::after {
+                    content: '';
+                    position: absolute;
+                    border-bottom: 1px solid $color-dark-gray;
+                    width: 100%;
+                    bottom: 0;
+                    left: 0;
+                    right: 0;
+                    margin: auto;
                 }
+
+                &::before {
+                    content: '';
+                    position: absolute;
+                    border-bottom: 2px solid $color-oranage;
+                    width: 0;
+                    bottom: 0;
+                    left: 0;
+                    margin: auto;
+                    z-index: 1;
+                    transition: all 0.3s;
+                }
+
+                &:hover {
+
+                    &::before {
+                        width: 70px;
+                    }
+                }
+
+
+
+                .active {
+                    color: $color-oranage;
+                    font-size: 18px;
+                    cursor: default;
+                }
+
+                &__btn {
+                    font-family: $font-family-quantico;
+                    font-size: 14px;
+                    width: 100%;
+                    display: flex;
+                    justify-content: space-between;
+                    align-items: center;
+
+                    transition: all 0.3s;
+
+                    &:hover {
+                        color: $color-oranage;
+                    }
+
+
+                    .right-arrow-icon {
+                        width: 10px;
+                        height: 10px;
+                        border-right: 2px solid $color-light;
+                        border-bottom: 2px solid $color-light;
+                        display: block;
+                        transform: rotate(-45deg);
+                        margin-right: 5px;
+                    }
+                }
+
+
             }
 
-           
 
-            &__btn {
-                font-family: $font-family-quantico;
-                font-size: 16px;
-            }
 
 
         }
-
-        .has-sublist {
-            display: flex;
-            justify-content: space-between;
-            align-items: center;
-
-            &__arrow-icon {
-                width: 10px;
-                height: 10px;
-                border-right: 1px solid $color-light;
-                border-bottom: 1px solid $color-light;
-                display: block;
-                transform: rotate(320deg);
-                margin-right: 5px;
-            }
-        }
-
-
     }
 }
