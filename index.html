@@ -35,12 +35,12 @@ BEM REFERENCES
 <body id="home" class="bg-dark">
 
 	<!-- =========== OFFCANVAS =========== -->
-	<section id="ef-offcanvas" class="offcanvas fixed z-max h-screen">
-		<div class="offcanvas__header flex justify-between items-center">
-			<p class="offcanvas__header__title">Menu</button>
-			<div class="offcanvas__header__close-btn flex items-center justify-center">
+	<section id="ef-offcanvas" class="offcanvas fixed z-max h-screen d-none">
+		<div class="offcanvas__header flex justify-between items-center" >
+			<p class="offcanvas__header__title">Menu</p>
+			<button id="close-offcanvas-btn" class="offcanvas__header__close-btn flex items-center justify-center">
 				<img class="h-auto" src="/public/images/icons/cancel.svg" alt="offcanvas-close-btn">
-			</div>
+			</button>
 		</div>
 		<ul class="offcanvas__list flex flex-col items-start justify-start">
 			<li class="offcanvas__list__item w-100">
@@ -262,7 +262,7 @@ BEM REFERENCES
 							<img src="/images/icons/person.svg" alt="profile">
 						</button>
 						<!-- =========== BURGER MENU =========== -->
-						<button
+						<button id="show-offcanvas-btn"
 							class="nav__contents__cart-and-avatar__burger-menu burger-menu flex items-center justify-center">
 							<img src="/images/icons/list.svg" class="" alt="burger menu">
 						</button>

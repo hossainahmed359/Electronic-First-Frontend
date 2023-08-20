@@ -1,3 +1,49 @@
+// ANIMATIONS
+@keyframes slide-in-offcanvas {
+    0% {
+        margin-right: -300px;
+        opacity: 0;
+    }
+
+    50% {
+        margin-right: -150px;
+        opacity: 0.5;
+    }
+
+    100% {
+        margin-right: 1px;
+    }
+}
+
+@keyframes slide-out-offcanvas {
+    0% {
+        margin-right: 0px;
+        opacity: 1;
+    }
+
+    50% {
+        margin-right: -150px;
+        opacity: 0.5;
+    }
+
+    100% {
+        margin-right: -300px;
+        opacity: 0;
+    }
+}
+
+.slide-in-left {
+	-webkit-animation: slide-in-offcanvas 0.3s linear;
+	        animation: slide-in-offcanvas 0.3s linear;
+}
+
+.slide-out-right {
+	-webkit-animation: slide-out-offcanvas 0.3s linear;
+	        animation: slide-out-offcanvas 0.3s linear;
+}
+
+
+// OFFCANVAS
 .offcanvas {
     background-color: $color-ultra-dark;
     border-left: 2px solid $color-oranage;
@@ -40,7 +86,6 @@
             position: relative;
             padding-top: 20px;
             padding-bottom: 20px;
-            transition:  all 1s;
 
             &::after {
                 content: '';
@@ -62,6 +107,7 @@
                 left: 0;
                 margin: auto;
                 z-index: 1;
+                transition:  all 0.3s;
             }
 
             &:hover {

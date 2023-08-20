@@ -1,8 +1,10 @@
 import './styles/main.scss';
+import useOffcanvas from './script/useOffcanvas';
 import useSearch from './script/useSearch';
 import useDropdown from './script/useDropdown';
 import useAddEvent from './script/useAddEvent';
 
+const { handleOffcanvasShow, handleOffcanvasClose } = useOffcanvas();
 const { handleSearchOn, handleSearchClose, handleMoblieSearchOn, handleMobileSearchClose } = useSearch();
 const { handleDropdownShow, handleDropdownClose } = useDropdown();
 const { addEventToMultitpleElements } = useAddEvent();
@@ -57,6 +59,16 @@ const arrayOfListedElements = [
         className: 'nav__contents__menus__bottom__dropdown-list__item',
         event: 'click',
         callback: toggleDropdown
+    },
+    {
+        id: 'show-offcanvas-btn',
+        event: 'click',
+        callback: handleOffcanvasShow
+    },
+    {
+        id: 'close-offcanvas-btn',
+        event: 'click',
+        callback: handleOffcanvasClose
     },
 ]
 
