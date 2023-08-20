@@ -224,6 +224,10 @@ button {
   z-index: 50;
 }
 
+.z-max {
+  z-index: 999999;
+}
+
 .z-auto {
   z-index: auto;
 }

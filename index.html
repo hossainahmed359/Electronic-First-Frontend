@@ -33,6 +33,26 @@ BEM REFERENCES
  -->
 
 <body id="home" class="bg-dark">
+
+	<!-- =========== OFFCANVAS =========== -->
+	<section id="ef-offcanvas" class="offcanvas fixed z-max h-screen">
+		<div class="offcanvas__header flex justify-between items-center">
+			<p class="offcanvas__header__title">Menu</button>
+			<div class="offcanvas__header__close-btn flex items-center justify-center">
+				<img class="h-auto" src="/public/images/icons/cancel.svg" alt="offcanvas-close-btn">
+			</div>
+		</div>
+		<ul class="offcanvas__list flex flex-col items-start justify-start">
+			<li class="offcanvas__list__item w-100">
+				<button class="offcanvas__list__item__btn">Trending</button>
+			</li>
+			<li class="offcanvas__list__item has-sublist w-100">
+				<button>PC</button>
+				<span class="has-sublist__arrow-icon"></span>
+			</li>
+		</ul>
+	</section>
+
 	<!-- =========== HERO SECTION =========== -->
 	<section id="hero" class="bg-hero relative w-100">
 		<!-- =========== NAVIGATION =========== -->
@@ -231,7 +251,8 @@ BEM REFERENCES
 					</div>
 					<!-- =========== CART & USER =========== -->
 					<div class="nav__contents__cart-and-avatar flex items-center justify-center gap-2">
-						<button id="mobile-search-btn" class="nav__contents__cart-and-avatar__search-icon flex items-center justify-center">
+						<button id="mobile-search-btn"
+							class="nav__contents__cart-and-avatar__search-icon flex items-center justify-center">
 							<img src="/images/icons/search.svg" alt="cart">
 						</button>
 						<button class="nav__contents__cart-and-avatar__cart-icon flex items-center justify-center">
@@ -249,13 +270,14 @@ BEM REFERENCES
 				</div>
 
 				<!-- =========== MOBILE SEARCH =========== -->
-				<div id="mobile-search" class="nav__mobile-search d-flex items-center justify-center absolute z-10 w-100 d-none">
+				<div id="mobile-search"
+					class="nav__mobile-search d-flex items-center justify-center absolute z-10 w-100 d-none">
 					<input type="text" placeholder="Minecraft, RPG, multiplayer...">
 					<button id="mobile-search-cancel-btn" class=" d-flex justify-center items-center">
 						<img src="/images/icons/cancel.svg" alt="Cancel Icon">
-					</div>
 				</div>
 			</div>
+		</div>
 
 		</div>
 		<!-- =========== HERO =========== -->

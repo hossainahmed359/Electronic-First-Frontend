@@ -60,4 +60,4 @@ const arrayOfListedElements = [
     },
 ]
 
-addEventToMultitpleElements(arrayOfListedElements)
+addEventToMultitpleElements(arrayOfListedElements);
