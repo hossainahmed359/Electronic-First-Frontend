@@ -30,8 +30,9 @@
     &__bottom {
 
         &__title,
-        &__price {
-            font-family: $font-family-roboto;
+        &__price,
+        &__dlc-tag {
+            font-family: $font-family-quantico;
             font-weight: 500;
         }
 
@@ -46,9 +47,9 @@
             opacity: 0.8;
             height: max-content;
 
-    
+
             &:hover {
-                background-color:  $color-dark-hover;
+                background-color: $color-dark-hover;
             }
         }
 
